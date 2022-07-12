@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _puts - prints a string with newline
- * @str: the string to print
+ * _puts - Prints a string with newline.
+ * @str: The string to print.
  *
- * Return: void
+ * Return: Void.
  */
 int _puts(char *str)
 {

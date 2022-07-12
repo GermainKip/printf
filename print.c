@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _printChar - prints character
- * @va: argument pointer
- * @direct: the parameters struct
+ * _printChar - Prints character.
+ * @va: Argument pointer.
+ * @direct: The parameters struct.
  *
- * Return: number chars printed
+ * Return: Number chars printed.
  */
 int _printChar(va_list va, directives *direct)
 {

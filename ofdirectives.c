@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * directives_init - clears struct fields and reset buf
- * @direct: the directives struct
- * @va: the argument pointer
+ * directives_init - Clears struct fields and reset buffer.
+ * @direct: The directives struct.
+ * @va: The argument pointer.
  *
  * Return: Void
  */
