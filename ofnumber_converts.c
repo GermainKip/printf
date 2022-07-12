@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * conversions- converter function, a clone of itoa
- * @number: number
- * @base: base
- * @flags: argument flags
- * @direct: directives struct
+ * conversions- Converter function, a clone of itoa.
+ * @number: Number.
+ * @base: Base.
+ * @flags: Argument flags.
+ * @direct: Directives struct.
  *
- * Return: string
+ * Return: String.
  */
 char *conversions(long int number, int base, int flags, directives *direct)
 {
