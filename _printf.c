@@ -3,12 +3,12 @@
 /**
  * _printf - prints anything
  * @format: the format string
- * 
+ *
  * Return: number of bytes printed
  */
 int _printf(const char *format, ...)
 {
-	int sm = 0;
+	int sum = 0;
 	va_list va;
 	char *ptr, *start;
 	directives direct = DIRECTIVES_INIT;
@@ -24,7 +24,7 @@ int _printf(const char *format, ...)
 		directives_init(&direct, va);
 		if (*ptr != '%')
 		{
-			sm += _putchar(*ptr);
+			sum += _putchar(*ptr);
 			continue;
 		}
 		start = ptr;
@@ -38,12 +38,12 @@ int _printf(const char *format, ...)
 		if (_modifier(ptr, &direct))
 			ptr++;
 		if (!_specifier(ptr))
-			sm += _print_to(start, ptr,
-					direct.l || direct.h ? ptr - 1 : 0);
+			sum += _print_to(start, ptr,
+				direct.l || direct.h ? ptr - 1 : 0);
 		else
-			sm += _printfunc(ptr, va, &direct);
+			sum += _printfunc(ptr, va, &direct);
 	}
 	_putchar(BUFFER_FLUSH);
 	va_end(va);
-	return (sm);
+	return (sum);
 }

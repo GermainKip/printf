@@ -23,13 +23,13 @@
  * struct parameters - directives struct
  *
  * @unsign: flag if unsigned value
- * 
+ *
  * @plus: on if plus_flag specified
  * @space: on if hashtag_flag specified
  * @hash: on if _flag specified
  * @zero: on if _flag specified
  * @minu: on if _flag specified
- * 
+ *
  * @width: field width specified
  * @precision: field precision specified
  *
@@ -60,7 +60,7 @@ typedef struct directives
  * @specifier: format token
  * @f: The function associated
  */
-typedef struct specifier
+typedef struct specifier 
 {
 	char *specifier;
 	int (*f)(va_list, directives *);
@@ -117,4 +117,3 @@ char *_precision(char *p, directives *direct, va_list va);
 int _printf(const char *format, ...);
 
 #endif
-
